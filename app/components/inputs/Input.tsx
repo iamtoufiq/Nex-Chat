@@ -22,7 +22,6 @@ const Input: React.FC<InputProps> = ({
   type = "text",
   disabled,
 }) => {
-  // console.log(register);
   return (
     <div>
       <label
