@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **NexChat Messenger App** 🚀
 
-## Getting Started
+**NexChat** is a real-time messaging application built with **Next.js**, providing users with a seamless and interactive chat experience. It utilizes **Pusher** for real-time communication, **Tailwind CSS** for styling, and offers features such as deleting conversations, editing profiles, creating groups, group chat, and message tracking.
 
-First, run the development server:
+## **Features**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Real-time Messaging:** Enjoy instant and responsive communication with real-time updates using **Pusher**.
+- **User-Friendly Interface:** **NexChat** provides a user-friendly interface designed for a seamless chatting experience.
+- **Tailwind CSS Styling:** The app is styled using **Tailwind CSS**, ensuring a modern and visually appealing design.
+- **Conversation Management:** Users can delete conversations to manage their chat history efficiently.
+- **Profile Editing:** Easily edit and update your profile details within the app.
+- **Group Creation:** Users can create groups for collaborative discussions.
+- **Group Chat:** Engage in real-time conversations within created groups.
+- **Message Tracking:** Keep track of messages to see who has read individual and group messages.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Technologies Used**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js:** A React framework for building modern web applications.
+- **Pusher:** Enables real-time functionality in the application.
+- **Tailwind CSS:** A utility-first CSS framework for styling.
+- **Next-Auth:** Provides authentication solutions for Next.js applications.
+- **Prisma:** Used for database operations, ensuring seamless integration with the Next.js app.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## **Getting Started**
 
-## Learn More
+### **Prerequisites**
 
-To learn more about Next.js, take a look at the following resources:
+- **Node.js and npm** installed on your machine.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Installation**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/iamtoufiq/Nex-Chat
