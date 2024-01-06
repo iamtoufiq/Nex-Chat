@@ -24,7 +24,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
 }) => {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const otherUser = useOtherUser(data);
-  console.log("otherUser", otherUser);
+  // console.log("otherUser", otherUser);
 
   const joinedDate = useMemo(() => {
     return format(new Date(otherUser.createdAt), "PP");
