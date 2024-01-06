@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import ToasterContext from "./context/ToasterContext";
 import AuthContext from "./context/AuthContext";
+import ActiveStatus from "./components/ActiveStatus";
 
 export const metadata: Metadata = {
   title: "NexChat",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <AuthContext>
           <ToasterContext />
+          <ActiveStatus />
           {children}
         </AuthContext>
       </body>
