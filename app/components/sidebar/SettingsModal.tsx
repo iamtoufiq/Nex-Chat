@@ -1,11 +1,11 @@
 "use client";
 
 import axios from "axios";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { User } from "@prisma/client";
 import { CldUploadButton } from "next-cloudinary";
+import { User } from "@prisma/client";
 
 import Input from "../inputs/Input";
 import Modal from "../modals/Modal";
@@ -26,8 +26,6 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
 }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
-
-  // console.log(currentUser, "&TEST_CURRENT_USER");
 
   const {
     register,

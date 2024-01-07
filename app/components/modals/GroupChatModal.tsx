@@ -2,8 +2,8 @@
 
 import axios from "axios";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 import { User } from "@prisma/client";
 
 import Input from "../inputs/Input";

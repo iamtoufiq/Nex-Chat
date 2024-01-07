@@ -1,8 +1,8 @@
 "use client";
 
 import React, { Fragment } from "react";
-import { Dialog, Transition } from "@headlessui/react";
 import { IoClose } from "react-icons/io5";
+import { Dialog, Transition } from "@headlessui/react";
 
 interface ModalProps {
   isOpen?: boolean;

@@ -1,11 +1,12 @@
-import { FullMessageType } from "@/app/types";
+import { useState } from "react";
+import { format } from "date-fns";
 import clsx from "clsx";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import { useState } from "react";
-import { format } from "date-fns";
+import { FullMessageType } from "@/app/types";
 import Avatar from "@/app/components/Avatar";
 import ImageModal from "./ImageModal";
+
 interface MessageBoxProps {
   data: FullMessageType;
   isLast?: boolean;
@@ -13,6 +14,7 @@ interface MessageBoxProps {
 
 const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
   const session = useSession();
+
   const [imageModalOpen, setImageModalOpen] = useState(false);
 
   const isOwn = session.data?.user?.email === data?.sender?.email;
@@ -27,7 +29,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
   const message = clsx(
     "text-sm w-fit overflow-hidden",
     isOwn ? "bg-sky-500 text-white" : "bg-gray-100",
-    data.image ? "rounded-md p-0" : "rounded-full py-2 px-3"
+    data.image ? "rounded-md p-0" : "rounded-xl py-2 px-3"
   );
 
   return (

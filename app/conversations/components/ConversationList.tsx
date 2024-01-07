@@ -1,17 +1,17 @@
 "use client";
 
-import useConversation from "@/app/hooks/useConversation";
-import { FullConversationType } from "@/app/types";
-import clsx from "clsx";
+import { useEffect, useMemo, useState } from "react";
 import { MdOutlineGroupAdd } from "react-icons/md";
+import clsx from "clsx";
+import { find } from "lodash";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import useConversation from "@/app/hooks/useConversation";
+import { FullConversationType } from "@/app/types";
 import ConversationBox from "./ConversationBox";
 import GroupChatModal from "@/app/components/modals/GroupChatModal";
 import { User } from "@prisma/client";
 import { pusherClient } from "@/app/libs/pusher";
-import { find } from "lodash";
 
 interface ConversationListProps {
   initialItems: FullConversationType[];
@@ -23,8 +23,6 @@ const ConversationList: React.FC<ConversationListProps> = ({
   initialItems,
   users,
 }) => {
-  // console.log("initialItems", initialItems);
-  // console.log("users", users);
   const [items, setItems] = useState(initialItems);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
